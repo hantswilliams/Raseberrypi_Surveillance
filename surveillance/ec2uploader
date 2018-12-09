@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#note - might need to chmod u+x ec2uploader to gt this working
+
+rsync --ignore-existing -e "ssh -i /home/pi/Desktop/surveillance/webapp/raspi.pem" /home/pi/Desktop/surveillance/images/* ubuntu@ec2-34-220-239-97.us-west-2.compute.amazonaws.com:/home/ubuntu/images/
